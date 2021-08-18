@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/trivia_nav_graph"
+    app:startDestination="@id/trivia_fragment">
+
+    <fragment
+        android:id="@+id/trivia_fragment"
+        android:name="com.example.triviarecyclerview_august9.ui.trivia.view.TriviaFragment"
+        tools:layout="@layout/fragment_trivia">
+        <action
+            android:id="@+id/action_trivia_fragment_to_congrats_fragment"
+            app:destination="@id/congrats_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/congrats_fragment"
+        android:name="com.example.triviarecyclerview_august9.ui.trivia.view.CongratsFragment"
+        tools:layout="@layout/fragment_congrats" />
+
+</navigation>
